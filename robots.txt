@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /images/equip/
+
+Sitemap: https://sida-sulbi.co.kr/sitemap.xml
