@@ -157,6 +157,20 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 .hero-left{flex:1;min-width:240px;}
 @media(max-width:640px){.qcard-wrap{min-width:100%;max-width:100%;}.hero-inner{flex-direction:column;}}
 
+
+/* 장비사진 1:1 그리드 */
+.equip-strip {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:8px;
+  margin-bottom:32px;
+}
+.equip-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+@media(max-width:480px){ .equip-strip { grid-template-columns:repeat(3,1fr); } }
+
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
@@ -231,7 +245,7 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <div class="gi"><img src="/images/drain/sida-sulbi-drain-09.jpg" alt="양평동 하수구막힘 실제 작업 사진 5 | 사이다설비" loading="lazy" width="400" height="280"></div>
 </div>
 
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비로 정확하게</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/sida-sulbi-equipment-01.jpg" alt="사이다설비 배관청소 장비" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">배관 고압 세척기</div></div><div class="eq-card"><img src="/images/equipment/sida-sulbi-equipment-04.jpg" alt="사이다설비 내시경 장비" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">내시경 진단 장비</div></div><div class="eq-card"><img src="/images/equipment/sida-sulbi-equipment-02.jpg" alt="사이다설비 세척 장비" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">배관 세척 스프링</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">사이다설비 전문 장비</h2><div class="equip-strip"><img src="/images/equip/sida-sulbi-jangbi-naesigyeong-01.jpg" alt="배관 내시경 카메라 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-goabsekcheok-01.jpg" alt="엔진식 고압세척기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-tanzi-01.jpg" alt="열화상 누수탐지기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-team-01.jpg" alt="사이다설비 전문 팀 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-eumsik-01.jpg" alt="음식물 전용 세척장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-01.jpg" alt="플렉스 샤프트 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-02.jpg" alt="이물질 회수장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-03.jpg" alt="수압 측정기 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-04.jpg" alt="배관 내시경 모니터 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-05.jpg" alt="수도관 탐지기 | 사이다설비" loading="lazy"></div>
 <div class="sl">TIME</div><h2 class="st">긴급출동 소요 시간</h2><div class="time-box"><div class="tr2"><span class="tl">거점 지역 출동 시간</span><span class="tv">30분 이내</span></div><div class="tr2"><span class="tl">진단 및 견적 안내</span><span class="tv">10분 내외</span></div><div class="tr2"><span class="tl">작업 완료 (단순)</span><span class="tv">30~60분</span></div><div class="tr2"><span class="tl">작업 완료 (복잡)</span><span class="tv">1~3시간</span></div></div>
 <div class="sl">PRICE</div><h2 class="st">양평동 하수구막힘 비용 안내</h2><div class="cost-wrap"><div class="cr"><span class="cl">출장비</span><span class="cp">무료 방문</span></div><div class="cr"><span class="cl">작업 비용</span><span class="cp">현장 확인 후 안내</span></div><div class="cr"><span class="cl">야간·공휴일</span><span class="cp">별도 할증 없음</span></div><div class="cr"><span class="cl">과견적</span><span class="cp">절대 없음</span></div></div><p class="cn">※ 현장에서 상태를 직접 보고 솔직하게 말씀드려요. 작업 전 반드시 비용 안내 후 동의를 받고 시작해요.</p>
 <div class="sl">NEARBY</div>

@@ -157,6 +157,20 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 .hero-left{flex:1;min-width:240px;}
 @media(max-width:640px){.qcard-wrap{min-width:100%;max-width:100%;}.hero-inner{flex-direction:column;}}
 
+
+/* 장비사진 1:1 그리드 */
+.equip-strip {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:8px;
+  margin-bottom:32px;
+}
+.equip-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+@media(max-width:480px){ .equip-strip { grid-template-columns:repeat(3,1fr); } }
+
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
@@ -221,6 +235,7 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 </div>
 <div class="tip-box"><strong style="display:block;margin-bottom:4px;">💡 마포동 하수구 배관 폐색 예방 팁</strong>마포동 한강변 저층 주거지는 겨울 한파 예보가 있을 때 미리 외부 배관 보온재 상태를 점검하세요. 동파 예방이 수리비를 크게 줄여요.</div>
 
+<div class="sl">EQUIPMENT</div><h2 class="st">사이다설비 전문 장비</h2><div class="equip-strip"><img src="/images/equip/sida-sulbi-jangbi-naesigyeong-01.jpg" alt="배관 내시경 카메라 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-goabsekcheok-01.jpg" alt="엔진식 고압세척기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-tanzi-01.jpg" alt="열화상 누수탐지기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-team-01.jpg" alt="사이다설비 전문 팀 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-eumsik-01.jpg" alt="음식물 전용 세척장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-01.jpg" alt="플렉스 샤프트 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-02.jpg" alt="이물질 회수장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-03.jpg" alt="수압 측정기 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-04.jpg" alt="배관 내시경 모니터 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-05.jpg" alt="수도관 탐지기 | 사이다설비" loading="lazy"></div>
 <div class="sl">WORK</div>
 <h2 class="st">마포동 하수구막힘 실제 작업 현장</h2>
 <div class="gallery-grid">
@@ -231,7 +246,6 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <div class="gi"><img src="/images/drain/sida-sulbi-drain-01.jpg" alt="마포동 하수구막힘 실제 작업 사진 5 | 사이다설비" loading="lazy" width="400" height="280"></div>
 </div>
 
-<div class="sl">CASES</div><h2 class="st">마포동 실제 작업 사례 모음</h2><div class="faq-item"><div class="fq">Q. 하수구막힘 재발 방지 방법은?</div><div class="fa">A. 기름을 배수구에 버리지 않고 6개월~1년 주기 세척을 받으면 재발을 막을 수 있어요.</div></div><div class="faq-item"><div class="fq">Q. 욕실 하수구막힘도 처리해요?</div><div class="fa">A. 욕실 배수막힘, 화장실 하수구막힘 모두 처리 가능해요.</div></div><div class="faq-item"><div class="fq">Q. 노후 배관도 고압세척 가능한가요?</div><div class="fa">A. 배관 재질에 맞는 수압으로 조절해요. 손상 위험 없이 진행할게요.</div></div><div class="faq-item"><div class="fq">Q. 하수구역류가 생겼어요.</div><div class="fa">A. 즉시 물 사용을 줄이고 연락 주세요. 긴급 출동해요.</div></div><div class="faq-item"><div class="fq">Q. 여러 배수구가 동시에 느려졌어요.</div><div class="fa">A. 공용 배관 막힘 신호예요. 즉시 점검이 필요해요.</div></div>
 <div class="sl">PROCESS</div><h2 class="st">마포동 출장 진행 순서</h2><div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>전화 접수</strong><p>증상·위치 확인</p></div><div class="pstep"><div class="psn">2</div><strong>마포동 출동</strong><p>장비 준비</p></div><div class="pstep"><div class="psn">3</div><strong>현장 도착</strong><p>배관 점검</p></div><div class="pstep"><div class="psn">4</div><strong>내시경 진단</strong><p>원인 파악</p></div><div class="pstep"><div class="psn">5</div><strong>비용 안내</strong><p>견적 동의</p></div><div class="pstep"><div class="psn">6</div><strong>작업 시작</strong><p>뚫기·세척</p></div><div class="pstep"><div class="psn">7</div><strong>배수 테스트</strong><p>정상 확인</p></div><div class="pstep"><div class="psn">8</div><strong>예방 안내</strong><p>재발 방지</p></div></div>
 <div class="sl">NEARBY</div>
 <h2 class="st">인근 지역도 출장하나요?</h2>

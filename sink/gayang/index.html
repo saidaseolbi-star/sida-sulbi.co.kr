@@ -157,6 +157,20 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 .hero-left{flex:1;min-width:240px;}
 @media(max-width:640px){.qcard-wrap{min-width:100%;max-width:100%;}.hero-inner{flex-direction:column;}}
 
+
+/* 장비사진 1:1 그리드 */
+.equip-strip {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:8px;
+  margin-bottom:32px;
+}
+.equip-strip img {
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:8px; display:block;
+}
+@media(max-width:480px){ .equip-strip { grid-template-columns:repeat(3,1fr); } }
+
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
@@ -221,6 +235,7 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 </div>
 <div class="tip-box"><strong style="display:block;margin-bottom:4px;">💡 가양동 주방 배관 폐색 예방 팁</strong>가양동 아파트 배수가 점점 느려지면 배관 내부 스케일이 원인이에요. 고압세척으로 예방 관리하는 것을 권장해요.</div>
 
+<div class="sl">EQUIPMENT</div><h2 class="st">사이다설비 전문 장비</h2><div class="equip-strip"><img src="/images/equip/sida-sulbi-jangbi-naesigyeong-01.jpg" alt="배관 내시경 카메라 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-goabsekcheok-01.jpg" alt="엔진식 고압세척기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-tanzi-01.jpg" alt="열화상 누수탐지기 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-team-01.jpg" alt="사이다설비 전문 팀 | 사이다설비" loading="lazy"><img src="/images/equip/sida-sulbi-jangbi-eumsik-01.jpg" alt="음식물 전용 세척장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-01.jpg" alt="플렉스 샤프트 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-02.jpg" alt="이물질 회수장비 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-03.jpg" alt="수압 측정기 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-04.jpg" alt="배관 내시경 모니터 | 사이다설비" loading="lazy"><img src="/images/equipment/sida-sulbi-equipment-05.jpg" alt="수도관 탐지기 | 사이다설비" loading="lazy"></div>
 <div class="sl">WORK</div>
 <h2 class="st">가양동 싱크대막힘 실제 작업 현장</h2>
 <div class="gallery-grid">
