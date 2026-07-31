@@ -3,21 +3,35 @@
 
 [[redirects]]
   from = "https://www.sida-sulbi.co.kr/*"
-  to = "https://sida-sulbi.co.kr/:splat"
+  to   = "https://sida-sulbi.co.kr/:splat"
   status = 301
-  force = true
-
-[[redirects]]
-  from = "/*"
-  to = "/:splat/"
-  status = 301
-  force = false
-
-[build.environment]
-  NODE_VERSION = "18"
+  force  = true
 
 [[headers]]
   for = "/*"
   [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
