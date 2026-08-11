@@ -179,12 +179,41 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
   font-size:14px; color:#3a4560; line-height:1.9;
 }
 
+
+.available-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0,200,100,0.18);
+  border: 1.5px solid rgba(0,220,110,0.5);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d4ffec;
+  margin-bottom: 14px;
+}
+.available-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: #00E87A;
+  box-shadow: 0 0 0 0 rgba(0,232,122,0.7);
+  animation: pulse-green 1.4s infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-green {
+  0%   { box-shadow: 0 0 0 0 rgba(0,232,122,0.7); }
+  70%  { box-shadow: 0 0 0 8px rgba(0,232,122,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,232,122,0); }
+}
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
 </head>
 <body>
-<div class="eb">📞 배관 막혔나요? 사이다처럼 시원하게! <a href="tel:07080641086">070-8064-1086</a></div>
+<div class="eb">📞 배관 막혔나요? 사이다처럼 시원하게! 
+<div class="available-pill"><span class="available-dot"></span>지금 출장 가능</div>
+<a href="tel:07080641086">070-8064-1086</a></div>
 <header>
 <div class="hi">
 <a href="/" class="logo"><span class="logo-star">★</span>사이다설비</a>
@@ -202,14 +231,9 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <div class="hero-inner">
 <div class="hero-left">
 <div class="hero-badge">★ 용산구 · 이태원동 전문</div>
-<h1 style="font-size:26px;font-weight:800;margin-bottom:10px;line-height:1.35;">이태원동 변기 막힘 해결<br><span style="font-size:18px;font-weight:500;">이태원동은 용산구 외국인 밀집 상권으로 다국적 음식점·바·클럽이 밀집해 있어요.</span></h1>
+<h1 style="font-size:26px;font-weight:800;margin-bottom:10px;line-height:1.35;">이태원동 변기 막힘 해결</h1>
 <p class="hero-sub">6호선 이태원역 인근 · 365일 24시간 · 현장 확인 후 견적</p>
-<a href="tel:07080641086" class="hero-cta">🚽 지금 문의하기</a>
-<div class="hero-tags">
-<div class="hero-tag">📍 신길동 거점</div>
-<div class="hero-tag">★ 시원한 해결</div>
-<div class="hero-tag">💬 현장 확인 후 견적</div>
-</div>
+<a href="tel:07080641086" class="hero-cta">★ 지금 문의하기</a>
 </div>
 <div class="qcard-wrap">
 <div class="qcard-time">평균 도착 시간</div>
@@ -220,7 +244,7 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 </ul>
 </div>
 </div></section>
-<div class="svc-menu"><div class="svc-menu-inner"><a href="/drain/itaewon/" class="svc-btn"><div class="svc-icon">🚿</div><div class="svc-label">하수구막힘</div></a><a href="/sink/itaewon/" class="svc-btn"><div class="svc-icon">🍳</div><div class="svc-label">싱크대막힘</div></a><a href="/toilet/itaewon/" class="svc-btn active"><div class="svc-icon">🚽</div><div class="svc-label">변기 뚫기</div></a><a href="/leak/itaewon/" class="svc-btn"><div class="svc-icon">💧</div><div class="svc-label">누수탐지·수리</div></a></div></div>
+
 <main class="ct">
 
 <div class="sl">CAUSES</div>
@@ -369,6 +393,8 @@ itaewon에서 1단계에 처리하면 비용과 시간을 가장 아낄 수 있�
 </div>
 
 
+
+<div class="svc-menu"><div class="svc-menu-inner"><a href="/drain/itaewon/" class="svc-btn"><div class="svc-icon">🚿</div><div class="svc-label">하수구막힘</div></a><a href="/sink/itaewon/" class="svc-btn"><div class="svc-icon">🍳</div><div class="svc-label">싱크대막힘</div></a><a href="/toilet/itaewon/" class="svc-btn active"><div class="svc-icon">🚽</div><div class="svc-label">변기 뚫기</div></a><a href="/leak/itaewon/" class="svc-btn"><div class="svc-icon">💧</div><div class="svc-label">누수탐지·수리</div></a></div></div>
 <footer>
 <div class="footer-star">★</div>
 <div class="local-story-box"><h3>📍 이태원동 변기막힘 지역 특성 및 작업 경험</h3><p>이태원동은 6호선 이태원역 인근 용산구 국제 관광 지역입니다. 외국인 관광객과 음식점 밀집으로 다양한 국적의 음식 기름 슬러지가 배관에 누적됩니다. 이태원 클럽·음식점은 영업 시간이 새벽까지 이어져 심야·새벽 긴급 출동이 잦습니다.</p></div>

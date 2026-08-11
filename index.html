@@ -94,6 +94,33 @@ footer{background:#003322;color:#fff;padding:40px 20px;text-align:center;font-si
 .footer-star{color:#FFD700;}
 .mob-tel{display:none;position:fixed;bottom:0;left:0;right:0;background:#00875A;color:#fff;text-align:center;padding:16px;font-size:18px;font-weight:800;text-decoration:none;z-index:999;}
 @media(max-width:768px){.mob-tel{display:block;}}
+
+.available-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0,200,100,0.18);
+  border: 1.5px solid rgba(0,220,110,0.5);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d4ffec;
+  margin-bottom: 14px;
+}
+.available-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: #00E87A;
+  box-shadow: 0 0 0 0 rgba(0,232,122,0.7);
+  animation: pulse-green 1.4s infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-green {
+  0%   { box-shadow: 0 0 0 0 rgba(0,232,122,0.7); }
+  70%  { box-shadow: 0 0 0 8px rgba(0,232,122,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,232,122,0); }
+}
 </style>
 
   <!-- 네이버 서치어드바이저 -->
@@ -118,7 +145,9 @@ footer{background:#003322;color:#fff;padding:40px 20px;text-align:center;font-si
 <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-<div class="eb">📞 배관 막혔나요? 사이다처럼 시원하게! &nbsp;<a href="tel:070-8064-1086">070-8064-1086</a></div>
+<div class="eb">📞 배관 막혔나요? 사이다처럼 시원하게! &nbsp;
+<div class="available-pill"><span class="available-dot"></span>지금 출장 가능</div>
+<a href="tel:070-8064-1086">070-8064-1086</a></div>
 <header><div class="hi"><a href="/" class="logo"><span class="logo-star">★</span>사이다설비</a><a href="tel:070-8064-1086" class="htel">📞 070-8064-1086</a></div></header>
 
 <div class="hero">
@@ -126,14 +155,7 @@ footer{background:#003322;color:#fff;padding:40px 20px;text-align:center;font-si
   <h1>배관 막혔나요?<br><em>사이다처럼 시원하게</em> 해결해요</h1>
   <p>영등포·동작·금천·구로·마포·용산·양천·강서 · 365일 24시간</p>
   <a href="tel:070-8064-1086" class="hero-cta">★ 지금 전화하기 070-8064-1086</a>
-  <div class="hero-tags">
-    <div class="hero-tag">📍 신길동 거점</div>
-    <div class="hero-tag">🚿 하수구막힘</div>
-    <div class="hero-tag">🚽 변기막힘</div>
-    <div class="hero-tag">🍳 싱크대막힘</div>
-    <div class="hero-tag">💧 누수탐지</div>
-    <div class="hero-tag">🔧 수전교체</div>
-  </div>
+                    </div>
 </div>
 
 <div class="ct">
