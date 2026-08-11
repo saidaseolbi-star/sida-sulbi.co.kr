@@ -106,7 +106,7 @@ header{background:#fff;border-bottom:3px solid var(--p);position:sticky;top:0;z-
 .nearby-context{font-size:13px;color:var(--m);margin-bottom:12px;line-height:1.7;}
 footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-size:13px;line-height:2;}
 .footer-star{color:var(--g);}
-.mob-tel{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--p);color:#fff;text-align:center;padding:16px;font-size:18px;font-weight:800;text-decoration:none;z-index:999;}
+.mob-tel{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--g);color:#003322;text-align:center;padding:16px;font-size:18px;font-weight:800;text-decoration:none;z-index:999;}
 @media(max-width:768px){.mob-tel{display:block;}}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:36px;}
 .gi img{width:100%;height:220px;object-fit:cover;border-radius:10px;display:block;}
@@ -206,13 +206,44 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
   70%  { box-shadow: 0 0 0 8px rgba(0,232,122,0); }
   100% { box-shadow: 0 0 0 0 rgba(0,232,122,0); }
 }
+
+.available-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0,200,100,0.18);
+  border: 1.5px solid rgba(0,220,110,0.5);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d4ffec;
+}
+.available-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: #00E87A;
+  box-shadow: 0 0 0 0 rgba(0,232,122,0.7);
+  animation: pulse-green 1.4s infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-green {
+  0%   { box-shadow: 0 0 0 0 rgba(0,232,122,0.7); }
+  70%  { box-shadow: 0 0 0 8px rgba(0,232,122,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,232,122,0); }
+}
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
 </head>
 <body>
-<div class="eb">📞 배관 막혔나요? 사이다처럼 시원하게! 
-<div class="available-pill"><span class="available-dot"></span>지금 출장 가능</div>
 <a href="tel:07080641086">070-8064-1086</a></div>
 <header>
 <div class="hi">
@@ -220,9 +251,9 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <a href="tel:07080641086" class="htel">📞 070-8064-1086</a>
 </div>
 </header>
-<nav aria-label="breadcrumb" style="background:#fff;border-bottom:1px solid #D4EDE3;">
-<div style="max-width:1000px;margin:0 auto;padding:8px 20px;font-size:13px;color:var(--m);">
-<a href="/" style="color:var(--m);text-decoration:none;">홈</a> › <a href="/drain/" style="color:var(--m);text-decoration:none;">하수 역류</a> › <span style="color:var(--t);font-weight:600;">상도동 배수관 막힘</span>
+<nav aria-label="breadcrumb" style="background:#fff;border-bottom:none;">
+<div style="max-width:1000px;margin:0 auto;padding:5px 20px;font-size:11px;color:#aaa;">
+<a href="/" style="color:#aaa;text-decoration:none;">홈</a> › <a href="/drain/" style="color:#aaa;text-decoration:none;">하수 역류</a> › <span style="color:var(--t);font-weight:600;">상도동 배수관 막힘</span>
 </div>
 </nav>
 <section class="hero">
@@ -401,6 +432,6 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 📞 070-8064-1086 · 365일 24시간<br>
 하수구막힘 · 변기막힘 · 싱크대막힘 · 누수탐지 · 수전교체
 </footer>
-<a href="tel:07080641086" class="mob-tel">📞 070-8064-1086 · 지금 바로 전화하기</a>
+<a href="tel:07080641086" class="mob-tel">📞 070-8064-1086 · 터치하여 전화하기</a>
 </body>
 </html>
