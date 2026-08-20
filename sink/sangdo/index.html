@@ -239,6 +239,20 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
   flex-wrap: wrap;
   margin-top: 4px;
 }
+.ai-summary{border-left:4px solid var(--p);background:rgba(255,255,255,0.7);border-radius:0 8px 8px 0;padding:10px 14px;margin:0 0 14px;}
+.ai-summary p{font-size:13px;color:#2c3e50;line-height:1.7;margin:0;}
+.inquiry-section{background:#f0f5ff;border:1px solid #d0dff5;border-radius:12px;padding:22px 20px;margin:20px 0;}
+.inquiry-title{font-size:16px;font-weight:800;color:#1a4a8a;margin:0 0 4px;}
+.inquiry-desc{font-size:12px;color:#666;margin:0 0 12px;}
+.inquiry-form{display:flex;flex-direction:column;gap:8px;}
+.inquiry-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.inquiry-input{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-input:focus{border-color:#00875A;}
+.inquiry-textarea{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;height:80px;resize:none;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-textarea:focus{border-color:#00875A;}
+.inquiry-btn{background:#00875A;color:#fff;border:none;border-radius:50px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;width:100%;}
+.inquiry-btn:hover{background:#006644;}
+@media(max-width:640px){.inquiry-row{grid-template-columns:1fr;}}
 </style>
 <link rel="icon" href="/favicon.ico">
 <!-- KEYWORD_BOOST -->
@@ -262,6 +276,8 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <div class="hero-left">
 <div class="hero-badge">★ 동작구 · 상도동 전문</div>
 <h1 style="font-size:26px;font-weight:800;margin-bottom:10px;line-height:1.35;">상도동 싱크대하수구막힘</h1>
+
+<div class="ai-summary"><p>📌 상도동 싱크대막힘 핵심 정보</p><p>상도동 싱크대 배관막힘 즉시 출동. 내시경 진단·배관스케일링 전문. 상수동·서빙고동·서교동 인근 30분 방문. 365일 24시간. 출장비 없음. 간단 작업부터. 미해결 시 0원. 현장 견적.</p></div>
 <p class="hero-sub">7호선 상도역·숭실대입구역 인근 · 365일 24시간 · 현장 확인 후 견적</p>
 <a href="tel:07080641086" class="hero-cta">★ 지금 문의하기</a>
 </div>
@@ -311,6 +327,19 @@ footer{background:#003322;color:#fff;padding:36px 20px;text-align:center;font-si
 <div class="sl">FAQ</div><h2 class="st">싱크대막힘 자주 묻는 질문</h2><div class="faq-item"><div class="fq">Q. 싱크대 역류가 생겼어요.</div><div class="fa">A. 즉시 물 사용을 줄이고 연락 주세요. 배관까지 막힌 상태예요.</div></div><div class="faq-item"><div class="fq">Q. 고압세척이 꼭 필요한가요?</div><div class="fa">A. 기름때 고착이 심한 경우 필요해요. 현장 확인 후 결정해요.</div></div><div class="faq-item"><div class="fq">Q. 트랩 교체도 해줘요?</div><div class="fa">A. 네, 트랩 교체와 배관 세척을 병행해요.</div></div><div class="faq-item"><div class="fq">Q. 주방 배수구도 처리해요?</div><div class="fa">A. 싱크대 외 모든 주방 배수구 처리 가능해요.</div></div><div class="faq-item"><div class="fq">Q. 싱크대 물이 아주 느리게 빠져요.</div><div class="fa">A. 막힘 초기 신호예요. 지금 처리하면 간단히 해결돼요.</div></div>
 <div class="sl">TIME</div><h2 class="st">긴급출동 소요 시간</h2><div class="time-box"><div class="tr2"><span class="tl">긴급 출동</span><span class="tv">30분 이내</span></div><div class="tr2"><span class="tl">원인 진단</span><span class="tv">10분 내외</span></div><div class="tr2"><span class="tl">단순 싱크대 해결</span><span class="tv">30~60분</span></div><div class="tr2"><span class="tl">고질적 기름 막힘</span><span class="tv">2시간 이상</span></div></div>
 <div class="sl">PRICE</div><h2 class="st">상도동 싱크대막힘 비용 안내</h2><div class="cost-wrap"><div class="cr"><span class="cl">출장비</span><span class="cp">무료 방문</span></div><div class="cr"><span class="cl">작업 비용</span><span class="cp">현장 확인 후 안내</span></div><div class="cr"><span class="cl">야간·공휴일</span><span class="cp">별도 할증 없음</span></div><div class="cr"><span class="cl">과견적</span><span class="cp">절대 없음</span></div></div><p class="cn">※ 현장에서 상태를 직접 보고 솔직하게 말씀드려요. 작업 전 반드시 비용 안내 후 동의를 받고 시작해요.</p>
+<div class="inquiry-section">
+<p class="inquiry-title">📋 빠른 문의 남기기</p>
+<p class="inquiry-desc">전화가 어려우시면 남겨주세요. 빠르게 연락드립니다.</p>
+<form action="https://formspree.io/f/xvkpdzvw" method="POST" class="inquiry-form">
+<div class="inquiry-row">
+<input type="text" name="name" placeholder="이름" required class="inquiry-input">
+<input type="tel" name="phone" placeholder="연락처 (예: 010-1234-5678)" required class="inquiry-input">
+</div>
+<textarea name="message" placeholder="증상을 간단히 적어주세요" required class="inquiry-textarea"></textarea>
+<input type="hidden" name="_subject" value="[사이다설비] 새 문의가 도착했습니다">
+<button type="submit" class="inquiry-btn">📨 문의 보내기</button>
+</form>
+</div>
 <div class="sl">NEARBY</div>
 <h2 class="st">인근 지역도 출장하나요?</h2>
 <p class="nearby-context">인근 흑석동·대방동·노량진동·사당동·신대방동 지역도 출장해요.</p>
